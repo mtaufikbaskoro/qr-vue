@@ -1,11 +1,11 @@
-<script setup></script>
+<script setup>
+import Button from './components/shared/Button.vue'
+</script>
 
 <template>
   <h1>Quantum Rekatama</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <p>Ini akan menjadi awal project vue saya</p>
+  <Button label="Tekan Saya" color="primary" />
 </template>
 
 <style scoped></style>
