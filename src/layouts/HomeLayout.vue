@@ -8,10 +8,8 @@ import Footer from '@/components/Footer.vue'
     <div class="min-w-full flex justify-center items-center my-2">
       <Navbar></Navbar>
     </div>
-    <main><slot /></main>
-    <div
-      class="fixed bottom-0 min-w-full flex justify-center items-center bg-primary text-primary-foreground"
-    >
+    <main class="my-28 space-y-60 min-w-full"><slot /></main>
+    <div class="min-w-full flex justify-center items-center bg-primary text-primary-foreground">
       <Footer></Footer>
     </div>
   </div>
