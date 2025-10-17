@@ -10,6 +10,9 @@ const props = defineProps({
     type: String,
     required: false,
   },
+  classname: {
+    type: String,
+  },
   disabled: {
     type: Boolean,
   },
@@ -43,6 +46,10 @@ const additionClass = computed(() => {
 
   if (props.disabled) {
     temp = `${layoutClass.value} + " " + ${'bg-muted text-muted-foreground cursor-not-allowed'}`
+  }
+
+  if (props.classname) {
+    temp += ' ' + props.classname
   }
 
   return temp
