@@ -3,6 +3,7 @@ import AboutUs from '@/components/section/AboutUs.vue'
 import Hero from '@/components/section/Hero.vue'
 import Team from '@/components/section/Team.vue'
 import HomeLayout from './layouts/HomeLayout.vue'
+import Benefit from './components/section/Benefit.vue'
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import HomeLayout from './layouts/HomeLayout.vue'
       <AboutUs />
     </div>
     <Team />
+    <Benefit />
   </HomeLayout>
 </template>
 

@@ -4,9 +4,27 @@ import './assets/main.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faEnvelope, faMap } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faPhone } from '@fortawesome/free-solid-svg-icons'
+import {
+  faClock,
+  faLeaf,
+  faMedal,
+  faMicrochip,
+  faPeopleGroup,
+  faPhone,
+  faHandshake,
+} from '@fortawesome/free-solid-svg-icons'
 
-library.add(faEnvelope, faPhone, faMap)
+library.add(
+  faEnvelope,
+  faPhone,
+  faMap,
+  faMedal,
+  faMicrochip,
+  faClock,
+  faLeaf,
+  faPeopleGroup,
+  faHandshake,
+)
 
 const app = createApp(App)
 
