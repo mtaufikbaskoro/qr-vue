@@ -2,9 +2,14 @@
 import { ref } from 'vue'
 
 const contacts = ref([
-  { type: 'phone', value: 'test', url: '' },
+  { type: 'phone', value: '+(62)81360019875', url: '' },
   { type: 'mail', value: 'test@mail.test', url: '' },
-  { type: 'address', value: 'Jalan Test Saja No 12', url: '' },
+  {
+    type: 'address',
+    value:
+      'Komplek Classic 1 No. B-7. Jl. Abdul hakim Pasar 1 Setiabudi. Medan Selayang Kota Medan.',
+    url: '',
+  },
 ])
 </script>
 

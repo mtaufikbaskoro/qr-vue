@@ -3,13 +3,30 @@ import { ref } from 'vue'
 import SectionLayout from '@/layouts/SectionLayout.vue'
 import Card from '@/components/shared/Card.vue'
 import Button from '@/components/shared/Button.vue'
-import placeholderImg from '@/assets/img/placeholder-team.jpeg'
+import imageOne from '@/assets/img/Genset350kVASilentTypeKantorBupatiPidieJayaAceh.jpeg'
+import imageTwo from '@/assets/img/GensetsilentType500kVARSUDKabPIJAY.jpeg'
+import imageThree from '@/assets/img/VidioTronDinasSyariatIslamKabPIJAY.jpeg'
 
 const title = ref('Proyek Kami')
 const data = ref([
-  { img: placeholderImg, title: 'Proyek Satu', description: 'CEO Quantum Rekatama' },
-  { img: placeholderImg, title: 'Proyek Dua', description: 'CEO Quantum Rekatama' },
-  { img: placeholderImg, title: 'Proyek Tiga', description: 'CEO Quantum Rekatama' },
+  {
+    img: imageOne,
+    title: 'Pemasangan Genset 350 kVA Silent Type - Kantor Bupati Pidie Jaya, Aceh',
+    description:
+      'Instalasi genset 350 kVA silent type sebagai sumber listrik cadangan untuk mendukung kelancaran operasional pemerintahan dengan daya handal dan suara minim.',
+  },
+  {
+    img: imageTwo,
+    title: 'Pemasangan Genset 500 kVA Silent Type - RSUD Kabupaten Pidie Jaya, Aceh',
+    description:
+      'Penyediaan dan instalasi genset 500 kVA silent type sebagai pasokan listrik cadangan yang andal, memastikan operasional rumah sakit tetap berjalan tanpa gangguan dengan tingkat kebisingan rendah.',
+  },
+  {
+    img: imageThree,
+    title: 'Pemasangan Videotron - Dinas Syariat Islam Kabupaten Pidie Jaya, Aceh',
+    description:
+      'Instalasi videotron sebagai media informasi dan publikasi kegiatan, mendukung penyampaian pesan dengan tampilan visual yang jelas dan menarik.',
+  },
 ])
 </script>
 
@@ -20,7 +37,12 @@ const data = ref([
     </div>
     <div class="w-full max-w-5xl grid grid-cols-3 gap-12">
       <div v-for="(item, index) in data" :key="index" class="col-span-1">
-        <Card :img="item.img" :title="item.title" :description="item.description" />
+        <Card
+          classnames="bg-white text-slate-700 p-4 rounded min-h-full shadow-lg"
+          :img="item.img"
+          :title="item.title"
+          :description="item.description"
+        />
       </div>
     </div>
     <Button

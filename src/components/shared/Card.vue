@@ -31,7 +31,7 @@ const additionalClass = `${layoutClass} ${props.classnames ? props.classnames : 
     <div v-if="!!props.img" class="image-wrapper rounded-lg">
       <img :src="props.img" alt="card_image" />
     </div>
-    <div class="w-full text-center mt-6">
+    <div class="w-full text-center mt-6 space-y-2">
       <h1 class="font-bold">{{ props.title }}</h1>
       <p class="text-muted text-sm">{{ props.description }}</p>
     </div>
@@ -49,6 +49,7 @@ const additionalClass = `${layoutClass} ${props.classnames ? props.classnames : 
 .image-wrapper img {
   width: 100%;
   height: 100%;
+  max-height: 200px;
   object-fit: cover;
   object-position: center;
   display: block;

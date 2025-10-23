@@ -3,14 +3,18 @@ import SectionLayout from '@/layouts/SectionLayout.vue'
 import { ref } from 'vue'
 import Card from '../shared/Card.vue'
 
-import placeholderImg from '@/assets/img/placeholder-team.jpeg'
+import ridwanImg from '@/assets/img/ridwan.jpeg'
+import agungImg from '@/assets/img/agung.jpeg'
+import teguhImg from '@/assets/img/teguh.jpeg'
+import ovyImg from '@/assets/img/ovy.jpeg'
+import cendekiaImg from '@/assets/img/cendekia.jpeg'
 
 const data = ref([
-  { img: placeholderImg, title: 'Ridwan Adam', description: 'CEO Quantum Rekatama' },
-  { img: placeholderImg, title: 'Ridwan Adam', description: 'CEO Quantum Rekatama' },
-  { img: placeholderImg, title: 'Ridwan Adam', description: 'CEO Quantum Rekatama' },
-  { img: placeholderImg, title: 'Ridwan Adam', description: 'CEO Quantum Rekatama' },
-  { img: placeholderImg, title: 'Ridwan Adam', description: 'CEO Quantum Rekatama' },
+  { img: ridwanImg, title: 'Ridwan Adam', description: 'CEO Quantum Rekatama' },
+  { img: teguhImg, title: 'Teguh', description: 'Engineer' },
+  { img: ovyImg, title: 'Ovy Taif' },
+  { img: cendekiaImg, title: 'M. Cendekia Amf', description: 'Marketing' },
+  { img: agungImg, title: 'Agung Adhi Laksana', description: 'Marketing' },
 ])
 </script>
 
