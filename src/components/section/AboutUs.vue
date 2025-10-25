@@ -22,11 +22,9 @@ const imageAlt = ref('american-public-power-unsplash')
         <p class="max-w-lg text-justify">{{ firstParagraph }}</p>
         <p class="max-w-lg text-justify">{{ secondParagraph }}</p>
       </div>
-      <Button
-        classname="font-semibold px-12 uppercase"
-        label="hubungi kami"
-        color="accent"
-      ></Button>
+      <a href="#contacts" class="block">
+        <Button classname="font-semibold px-12 uppercase" color="accent">hubungi kami</Button>
+      </a>
     </div>
     <div class="image-wrapper -my-16 rounded shadow-lg">
       <img :src="image" :alt="imageAlt" />

@@ -2,7 +2,6 @@
 import { ref } from 'vue'
 import SectionLayout from '@/layouts/SectionLayout.vue'
 import Card from '@/components/shared/Card.vue'
-import Button from '@/components/shared/Button.vue'
 import imageOne from '@/assets/img/Genset350kVASilentTypeKantorBupatiPidieJayaAceh.jpeg'
 import imageTwo from '@/assets/img/GensetsilentType500kVARSUDKabPIJAY.jpeg'
 import imageThree from '@/assets/img/VidioTronDinasSyariatIslamKabPIJAY.jpeg'
@@ -45,10 +44,5 @@ const data = ref([
         />
       </div>
     </div>
-    <Button
-      classname="font-semibold px-12 capitalize"
-      label="lihat lebih banyak"
-      color="accent"
-    ></Button>
   </SectionLayout>
 </template>

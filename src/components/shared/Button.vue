@@ -2,10 +2,6 @@
 import { computed, ref } from 'vue'
 
 const props = defineProps({
-  label: {
-    type: String,
-    required: true,
-  },
   color: {
     type: String,
     required: false,
@@ -58,6 +54,6 @@ const additionClass = computed(() => {
 
 <template>
   <button :class="additionClass" @click="handleClick" :disabled="props.disabled">
-    {{ props.label }}
+    <slot />
   </button>
 </template>

@@ -14,7 +14,7 @@ const contacts = ref([
 </script>
 
 <template>
-  <footer class="w-full max-w-5xl flex justify-between items-end my-8">
+  <footer id="contacts" class="w-full max-w-5xl flex justify-between items-end my-8">
     <div class="flex flex-col justify-end items-start gap-4">
       <h1 class="text-7xl text-secondary font-bold uppercase">qr</h1>
       <p class="text-sm">Copyright © 2025 Quantum Rekatama</p>

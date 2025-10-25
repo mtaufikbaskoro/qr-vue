@@ -13,6 +13,7 @@ import {
   faPhone,
   faHandshake,
 } from '@fortawesome/free-solid-svg-icons'
+import router from './router'
 
 library.add(
   faEnvelope,
@@ -28,6 +29,7 @@ library.add(
 
 const app = createApp(App)
 
+app.use(router)
 app.component('font-awesome-icon', FontAwesomeIcon)
 
 app.mount('#app')
