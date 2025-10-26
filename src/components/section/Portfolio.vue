@@ -34,7 +34,7 @@ const data = ref([
     <div class="space-y-4">
       <h1 class="text-4xl font-bold text-secondary capitalize">{{ title }}</h1>
     </div>
-    <div class="w-full max-w-5xl grid grid-cols-3 gap-12">
+    <div class="w-full max-w-sm md:max-w-4xl lg:max-w-5xl grid grid-cols-1 lg:grid-cols-3 gap-12">
       <div v-for="(item, index) in data" :key="index" class="col-span-1">
         <Card
           classnames="bg-white text-slate-700 p-4 rounded min-h-full shadow-lg"

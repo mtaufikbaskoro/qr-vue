@@ -15,7 +15,7 @@ const imageAlt = ref('american-public-power-unsplash')
 </script>
 
 <template>
-  <SectionLayout>
+  <SectionLayout class-names="flex-col lg:flex-row">
     <div class="py-16 space-y-8">
       <div class="space-y-4">
         <h1 class="text-4xl font-bold capitalize">{{ title }}</h1>

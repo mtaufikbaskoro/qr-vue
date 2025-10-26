@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  scroll-behavior: smooth;
 
   /* variables */
   --color-primary: #003366;
@@ -17,4 +16,8 @@
   --color-accent-foreground: #333333;
   --color-muted: #6c7a89;
   --color-muted-foreground: #ffffff;
+}
+
+body {
+  scroll-behavior: smooth;
 }

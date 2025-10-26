@@ -56,8 +56,10 @@ const data = ref([
 
 <template>
   <SectionLayout class-names="flex-col">
-    <h1 class="w-full text-4xl font-bold capitalize text-center">Kenapa Harus dengan QR?</h1>
-    <div class="w-full max-w-5xl grid grid-cols-3 items-center gap-12">
+    <h1 class="w-full text-4xl font-bold capitalize lg:text-center">Kenapa Harus dengan QR?</h1>
+    <div
+      class="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-12"
+    >
       <div v-for="(value, index) in data" :key="index" :class="`space-y-4 ${value.class}`">
         <div>
           <font-awesome-icon :class="`p-3.5 ${value.color} rounded text-xl`" :icon="value.icon" />

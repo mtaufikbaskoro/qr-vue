@@ -10,7 +10,7 @@ const description = ref(
 </script>
 
 <template>
-  <SectionLayout>
+  <SectionLayout class-names="flex-col lg:flex-row">
     <div class="space-y-4">
       <h1 class="text-4xl font-bold text-secondary capitalize">{{ title }}</h1>
       <p class="max-w-lg text-muted text-justify">{{ description }}</p>

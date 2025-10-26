@@ -3,7 +3,7 @@ import { ref, computed } from 'vue'
 import { routes } from '@/router'
 
 const layoutClass = ref(
-  'w-full max-w-sm md:max-w-2xl lg:max-w-5xl flex flex-col lg:flex-row justify-between items-center px-6 py-2.5 rounded bg-primary text-primary-foreground shadow-lg',
+  'w-full max-w-sm md:max-w-2xl lg:max-w-5xl flex flex-col lg:flex-row justify-between items-center gap-4 px-6 py-2.5 rounded bg-primary text-primary-foreground shadow-lg',
 )
 
 const linkClass = ref('font-semibold px-2 py-1.5 rounded transition-all ease-in')
