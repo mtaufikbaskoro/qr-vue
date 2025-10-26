@@ -14,12 +14,15 @@ const contacts = ref([
 </script>
 
 <template>
-  <footer id="contacts" class="w-full max-w-5xl flex justify-between items-end my-8">
-    <div class="flex flex-col justify-end items-start gap-4">
+  <footer
+    id="contacts"
+    class="w-full max-w-sm md:max-w-5xl flex flex-col lg:flex-row justify-between items-start lg:items-end space-y-4 px-4 my-8"
+  >
+    <div class="flex flex-col justify-start items-center lg:justify-end lg:items-start gap-4">
       <h1 class="text-7xl text-secondary font-bold uppercase">qr</h1>
-      <p class="text-sm">Copyright © 2025 Quantum Rekatama</p>
+      <p class="text-sm hidden lg:inline">Copyright © 2025 Quantum Rekatama</p>
     </div>
-    <div class="flex flex-col justify-center items-end gap-4 text-sm">
+    <div class="flex flex-col justify-center lg:items-end gap-4 text-sm">
       <h6 class="font-semibold">Hubungi melalui :</h6>
       <div class="space-x-2" v-for="(contact, index) in contacts" :key="index">
         <span>{{ contact.value }}</span>
